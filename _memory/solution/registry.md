@@ -2,7 +2,7 @@
 
 The instances that exist, per plane. Update this whenever you add a component.
 
-- Domain models: (Module 4)
+- Domain models: Product, PolicyDoc, FaqItem, Order, Ticket, EvalCase (Pydantic, apps/support-agent/src/domain/models.py) [Module 4]
 - Data generators: (Module 4)
 - Indexes: (Module 5)
 - Adapters: (Module 5+: orders DB, vector store)

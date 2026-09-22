@@ -8,6 +8,14 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "anthropic>=1.7.0",
+    "datasets>=5.0.1",
+    "duckdb>=1.5.5",
+    "faker>=40.39.0",
+    "mimesis>=21.0.0",
+    "pandas>=3.0.6",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.3",
     "typer>=0.27.2",
 ]
 
@@ -35,4 +43,9 @@ packages = [
     "src/observability",
     "src/serving",
     "src/config",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.6.4",
 ]

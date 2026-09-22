@@ -1,7 +1,9 @@
 # Data model
 
-Home: apps/support-agent/src/domain/models.py (the source of truth once Module 4 writes it).
-Status: draft in Module 2, finalized in Module 4.
+Home: apps/support-agent/src/domain/models.py (the source of truth).
+Status: finalized in code (Module 4). Pydantic BaseModel classes; money as int rupees
+(price_inr, amount_inr); dates as datetime.date. Optional in code: Order.delivery_date
+and Ticket.resolution default to None (open/undelivered).
 
 ## Entities (key fields)
 - Product: sku, name, category, price_inr, warranty_months
