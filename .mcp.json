@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "orders": {
+      "command": "uv",
+      "args": ["run", "--project", "apps/support-agent", "python", "-m", "tools.orders_mcp"]
+    },
+    "qdrant": {
+      "command": "uv",
+      "args": ["run", "--project", "apps/support-agent", "python", "-m", "tools.qdrant_mcp"]
+    }
+  }
+}

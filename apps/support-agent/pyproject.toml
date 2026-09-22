@@ -7,11 +7,32 @@ authors = [
     { name = "xteam jack", email = "xteam.jack@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "typer>=0.27.2",
+]
 
 [project.scripts]
-support-agent = "support_agent:main"
+sunrise = "app.cli:app"
 
 [build-system]
-requires = ["uv_build>=0.12.17,<0.13.0"]
-build-backend = "uv_build"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/app",
+    "src/domain",
+    "src/data",
+    "src/ingest",
+    "src/index",
+    "src/adapters",
+    "src/rag",
+    "src/prompts",
+    "src/agents",
+    "src/tools",
+    "src/memory",
+    "src/guardrails",
+    "src/observability",
+    "src/serving",
+    "src/config",
+]

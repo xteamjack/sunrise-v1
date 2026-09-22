@@ -1,0 +1,24 @@
+{
+  "model": "claude-sonnet-5",
+  "permissions": {
+    "allow": [
+      "Bash(uv run:*)",
+      "Bash(uv add:*)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git log:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(docker compose:*)",
+      "Read",
+      "Edit",
+      "Write"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(git push:*)",
+      "Read(.env)"
+    ]
+  }
+}
